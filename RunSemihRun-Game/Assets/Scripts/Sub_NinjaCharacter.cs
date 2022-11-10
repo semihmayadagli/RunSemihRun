@@ -38,6 +38,13 @@ public class Sub_NinjaCharacter : MonoBehaviour
             GameObject.FindWithTag("GameManager").GetComponent<GameManager>().CreateCharDemolishEffect(smokePos);
             gameObject.SetActive(false);
         }
+
+        if (other.CompareTag("Hammer"))
+        {
+            Vector3 smokePos = new Vector3(transform.position.x, 0.25f, transform.position.z);
+            GameObject.FindWithTag("GameManager").GetComponent<GameManager>().CreateCharDemolishEffect(smokePos);
+            gameObject.SetActive(false);
+        }
     }
 
 }
